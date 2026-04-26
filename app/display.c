@@ -498,6 +498,7 @@ void check_input(void)
     } else if (big_status_displayed) {
         restore_big_status();
         enable_big_status = false;
+        return;
     }
 
     switch (input_key) {
